@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100">
+            <!-- Title Bar -->
+            <LinearLayout
+                style="@style/topBarBackground"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:paddingRight="40dp"
+                    android:id="@+id/navi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/navigation" />
+
+                <TextView
+                    style="@style/topBarTitleText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Profile" />
+
+                <TextView
+                    android:id="@+id/editUser"
+                    style="@style/topBarActionText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Edit" />
+            </LinearLayout>
+            <!-- Title Bar Ends -->
+
+            <!--display user info-->
+            <include layout="@layout/display_user_info"/>
+
+            <TextView
+                style="@style/greyLine"
+                android:gravity="left|center"
+                android:paddingLeft="10dp"
+                android:textColor="#fff"
+                android:layout_height="40dp"
+                android:text="Reviews"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ratingLinear">
+
+                </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/left_drawer"
+        style="@style/navigationDrawerColor"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" />
+
+</android.support.v4.widget.DrawerLayout>

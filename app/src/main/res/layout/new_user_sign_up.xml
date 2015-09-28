@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Title Bar -->
+    <LinearLayout
+        style="@style/topBarBackground"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/topBarActionText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/topBarTitleText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Profile Setup" />
+
+        <TextView
+            android:id="@+id/updateNewUserProfile"
+            style="@style/topBarActionText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Save" />
+    </LinearLayout>
+    <!-- Title Bar Ends -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <View style="@style/greyLine" />
+
+        <Button
+            android:id="@+id/updateLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:text="Get Current Location"
+            android:textAllCaps="false" />
+
+        <View style="@style/greyLine" />
+
+        <TextView
+            android:id="@+id/newUserLocation"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:textColor="#0099CC"/>
+
+        <View
+            style="@style/greyLine"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/selectSports"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:text="Select Sports You Play"
+            android:textAllCaps="false" />
+
+        <View
+            style="@style/greyLine"
+            android:layout_height="40dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textColor="#404040" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textColor="#404040" />
+        </RadioGroup>
+
+        <View style="@style/greyLine" />
+    </LinearLayout>
+
+</LinearLayout>

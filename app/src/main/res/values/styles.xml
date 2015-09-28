@@ -1,0 +1,30 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/appBackgroundColor</item>
+        <item name="android:textColor">#404040</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="topBarBackground">
+        <item name="android:background">#33B5E5</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <style name="topBarTitleText">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="topBarActionText" parent="topBarTitleText">
+        <item name="android:textSize">25sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="greyLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#c0c0c0</item>
+    </style>
+    <style name="navigationDrawerColor">
+        <item name="android:background">#FF313131</item>
+    </style>
+
+</resources>
