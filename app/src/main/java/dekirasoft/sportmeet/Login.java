@@ -28,7 +28,7 @@ public class Login extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.email_sign_in);
 
-        /* initialize the class resources*/
+        /* initialize the class resources */
         initView();
     }
 
